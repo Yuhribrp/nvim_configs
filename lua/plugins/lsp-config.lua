@@ -2,7 +2,9 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+				PATH = "prepend",
+			})
 		end,
 	},
 	{
@@ -11,7 +13,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"omnisharp",
+					-- "omnisharp",
 					"csharp_ls",
 					"solargraph",
 					"html",
@@ -27,12 +29,12 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.omnisharp.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.csharp_ls.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.omnisharp.setup({
+			-- 	capabilities = capabilities,
+			-- })
+			-- lspconfig.csharp_ls.setup({
+			-- 	capabilities = capabilities,
+			-- })
 			lspconfig.solargraph.setup({
 				capabilities = capabilities,
 			})
