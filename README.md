@@ -53,19 +53,26 @@ To get started with these configurations, follow the steps below:
 
 
    `mv ~/.local/share/nvim{,.bak}`
+   
    `mv ~/.local/state/nvim{,.bak}`
+   
    `mv ~/.cache/nvim{,.bak}`
 
-1. **Clone the repository**:
+2. **Clone the repository**:
+
+ 
    `git clone git@github.com:Yuhribrp/nvim_configs.git`
+   
    `cd nvim_configs`
 
-2. **Remove the .git folder, so you can add it to your own repo later if you want.**
-3. 
+3. **Remove the .git folder, so you can add it to your own repo later if you want.**
+
+
    `rm -rf ~/.config/nvim/.git`
 
 4. **Start Neovim**
-5. 
+
+
    `nvim`
 
 ## License
