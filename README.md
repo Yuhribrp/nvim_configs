@@ -12,8 +12,7 @@ The current configurations focus primarily on **Ruby on Rails**, which is the ma
 
 These settings are tailored to streamline my development process, ensuring efficiency and productivity.
 
-## Table of Contents ##
-======================
+## Table of Contents
 
 - [Overview](#overview)
 - [Technologies](#technologies)
@@ -22,8 +21,7 @@ These settings are tailored to streamline my development process, ensuring effic
 - [License](#license)
 - [Contact](#contact)
 
-## Overview ##
-======================
+## Overview 
 
 This repository includes a collection of plugins and configurations that I use in my Neovim. 
 
@@ -32,7 +30,6 @@ These configs use lazyvim These settings are designed to work seamlessly with va
 Whether you are setting up a new development environment or looking to optimize your existing setup, this repository can serve as a useful reference.
 
 ## Technologies
-======================
 
 The configurations in this repository are optimized for the following technologies:
 
@@ -40,7 +37,6 @@ The configurations in this repository are optimized for the following technologi
 - **C#**: In progress / Yet to finish.
 
 ## Installation
-======================
 
 To get started with these configurations, follow the steps below:
 
@@ -80,15 +76,13 @@ To get started with these configurations, follow the steps below:
    `nvim`
 
 ## License
-======================
 
 
 ## Contributing
-======================
+
    If you have any suggestions or improvements, please feel free to reach out or open an issue. Contributions are always welcome!
 
 ## Contact
-======================
 
    For any questions or inquiries, you can reach me at:
 
