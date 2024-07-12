@@ -41,12 +41,17 @@ The configurations in this repository are optimized for the following technologi
 To get started with these configurations, follow the steps below:
 
 1. **If you have a previous Neovim config, make a backup of your current Neovim file**:
-   required
+
+
+   required:
    
    `mv ~/.config/nvim{,.bak}`
 
 
-   optional but recommended
+
+   optional but recommended:
+
+
    `mv ~/.local/share/nvim{,.bak}`
    `mv ~/.local/state/nvim{,.bak}`
    `mv ~/.cache/nvim{,.bak}`
