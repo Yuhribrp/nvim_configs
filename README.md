@@ -1,5 +1,4 @@
 # Neovim Personal Configs
-======================
 
 Welcome to my personal Neovim development configurations repository!
 
@@ -13,7 +12,7 @@ The current configurations focus primarily on **Ruby on Rails**, which is the ma
 
 These settings are tailored to streamline my development process, ensuring efficiency and productivity.
 
-## Table of Contents
+## Table of Contents ##
 ======================
 
 - [Overview](#overview)
@@ -23,7 +22,7 @@ These settings are tailored to streamline my development process, ensuring effic
 - [License](#license)
 - [Contact](#contact)
 
-## Overview
+## Overview ##
 ======================
 
 This repository includes a collection of plugins and configurations that I use in my Neovim. 
