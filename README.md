@@ -77,6 +77,8 @@ To get started with these configurations, follow the steps below:
 
 ## License
 
+This repository is licensed under the MIT License
+
 
 ## Contributing
 
