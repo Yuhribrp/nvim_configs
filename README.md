@@ -87,9 +87,5 @@ This repository is licensed under the MIT License
 ## Contact
 
    For any questions or inquiries, you can reach me at:
-
-   Email: yuhribrp.dev@gmail.com
-   
-   GitHub: Yuhribrp
    
    LinkedIn: [yuhribrp](https://www.linkedin.com/in/yuhribrp/)
