@@ -27,23 +27,46 @@
 -- }
 --
 
-return {
-{
-  "scottmckendry/cyberdream.nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    local cyberd = require("cyberdream")
+-- return {
+-- {
+--   "scottmckendry/cyberdream.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     local cyberd = require("cyberdream")
 
-    cyberd.setup({
-      transparent = false,
-      italic_comments = true,
-      hide_fillchars = false,
-      borderless_telescope = false,
-      terminal_colors = true,
-      cache = false,
+--     cyberd.setup({
+--       transparent = false,
+--       italic_comments = true,
+--       hide_fillchars = false,
+--       borderless_telescope = false,
+--       terminal_colors = true,
+--       cache = false,
+--       })
+--       vim.cmd([[colorscheme cyberdream]])
+--     end,
+--   },
+-- }
+
+return {
+	{
+		"rebelot/kanagawa.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			local kanagawa = require("kanagawa")
+
+			kanagawa.setup({
+				transparent = false,
+				commentStyle = { italic = true },
+				terminalColors = true,
+				theme = "dragon", -- lotus -- dragon -- wave
+			  background = {
+          dark = "dragon",
+          light = 'dragon'
+        },
       })
-      vim.cmd([[colorscheme cyberdream]])
-    end,
-  },
+			vim.cmd([[colorscheme kanagawa]])
+		end,
+	},
 }
