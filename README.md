@@ -77,6 +77,8 @@ To get started with these configurations, follow the steps below:
 
 ## License
 
+This repository is licensed under the MIT License
+
 
 ## Contributing
 
@@ -85,9 +87,5 @@ To get started with these configurations, follow the steps below:
 ## Contact
 
    For any questions or inquiries, you can reach me at:
-
-   Email: yuhribrp.dev@gmail.com
-   
-   GitHub: Yuhribrp
    
    LinkedIn: [yuhribrp](https://www.linkedin.com/in/yuhribrp/)
