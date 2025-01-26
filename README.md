@@ -61,7 +61,7 @@ To get started with these configurations, follow the steps below:
 2. **Clone the repository**:
 
  
-   `git clone git@github.com:Yuhribrp/nvim_configs.git`
+   `git clone git@github.com:Yuhribrp/nvim_configs.git ~/.config/nvim`
    
    `cd nvim_configs`
 
