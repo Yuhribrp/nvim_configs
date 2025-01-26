@@ -14,7 +14,7 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					-- "omnisharp",
-					"csharp_ls",
+          -- "csharp_ls",
 					"solargraph",
 					"html",
 				},
