@@ -48,25 +48,48 @@
 --   },
 -- }
 
+-- return {
+-- 	{
+-- 		"rebelot/kanagawa.nvim",
+-- 		lazy = false,
+-- 		priority = 1000,
+-- 		config = function()
+-- 			local kanagawa = require("kanagawa")
+
+-- 			kanagawa.setup({
+-- 				transparent = false,
+-- 				commentStyle = { italic = true },
+-- 				terminalColors = true,
+-- 				theme = "dragon", -- lotus -- dragon -- wave
+-- 			  background = {
+--           dark = "dragon",
+--           light = 'dragon'
+--         },
+--       })
+-- 			vim.cmd([[colorscheme kanagawa]])
+-- 		end,
+-- 	},
+-- }
+
 return {
 	{
-		"rebelot/kanagawa.nvim",
+		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			local kanagawa = require("kanagawa")
+			local tokyo = require("tokyonight")
 
-			kanagawa.setup({
-				transparent = false,
-				commentStyle = { italic = true },
-				terminalColors = true,
-				theme = "dragon", -- lotus -- dragon -- wave
-			  background = {
-          dark = "dragon",
-          light = 'dragon'
+			tokyo.setup({
+        transparent = true,
+        terminal_colors = true,
+        styles = {
+          comments = { italic = true },
+          keywords = { italic = true },
         },
-      })
-			vim.cmd([[colorscheme kanagawa]])
+
+        lualine_bold = false,
+			})
+			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
 }
