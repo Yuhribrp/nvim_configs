@@ -13,6 +13,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
+          "ruby_lsp",
 					-- "omnisharp",
           -- "csharp_ls",
 					"solargraph",
@@ -29,6 +30,9 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.ruby_lsp.setup({
+        capabilities = capabilities,
+      })
 			-- lspconfig.omnisharp.setup({
 			-- 	capabilities = capabilities,
 			-- })
