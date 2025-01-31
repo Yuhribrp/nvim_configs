@@ -9,7 +9,6 @@ But also is working fine with `Wsl2` and `Ubuntu`
 
 This repository contains all the configurations and settings I use daily to enhance my development workflow. 
 
-The current configurations focus primarily on **Ruby on Rails**, which is the main framework I work with, but I've also been using Rust extensively lately.
 The current configurations focus primarily on **Ruby on Rails**, which is the main framework I work with, but they also include a strong emphasis on **Rust**, which I've been using extensively lately.
 
 These settings are tailored to streamline my development process, ensuring efficiency and productivity.
