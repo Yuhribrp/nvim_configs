@@ -4,7 +4,7 @@ Welcome to my personal Neovim development configurations repository!
 
 I configured it using `lazy.nvim` by folke as plugin manager and `init.lua` as the cornerstone of my Neovim configuration, allowing you to specify settings, key mappings, and plugins.
 
-I designed this configuration for use in my development ecosystem, which consists of `Arch Linux` and `ZSH`
+I designed this configuration for use in my development ecosystem, which consists of `Arch Linux`.
 But also is working fine with `Wsl2` and `Ubuntu`
 
 This repository contains all the configurations and settings I use daily to enhance my development workflow. 
