@@ -1,12 +1,13 @@
 # Neovim Personal Configs
 
-Welcome to my personal Neovim development configurations repository!
-
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg" alt="Neovim Logo" width="100"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails Logo" width="100"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust Logo" width="100"/>
 </p>
+
+
+Welcome to my personal Neovim development configurations repository!
 
 I configured it using `lazy.nvim` by folke as plugin manager and `init.lua` as the cornerstone of my Neovim configuration, allowing you to specify settings, key mappings, and plugins.
 
