@@ -4,7 +4,8 @@ Welcome to my personal Neovim development configurations repository!
 
 I configured it using `lazy.nvim` by folke as plugin manager and `init.lua` as the cornerstone of my Neovim configuration, allowing you to specify settings, key mappings, and plugins.
 
-I designed this configuration for use in my development ecosystem, which consists of `WSL2` and `ZSH`
+I designed this configuration for use in my development ecosystem, which consists of `Arch Linux` and `ZSH`
+But also is working fine with `Wsl2` and `Ubuntu`
 
 This repository contains all the configurations and settings I use daily to enhance my development workflow. 
 
@@ -34,6 +35,7 @@ Whether you are setting up a new development environment or looking to optimize 
 The configurations in this repository are optimized for the following technologies:
 
 - **Ruby on Rails**: My primary framework for web development.
+- **Rust**: The language I am most engaged and focused on at the moment.
 - **C#**: In progress / Yet to finish.
 
 ## Installation
@@ -73,7 +75,7 @@ To get started with these configurations, follow the steps below:
 4. **Start Neovim**
 
 
-   `nvim`
+   `nvim` and run `:Mason` 
 
 ## License
 
