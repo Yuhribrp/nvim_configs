@@ -4,16 +4,19 @@
   <table>
     <tr>
       <td align="center">
+        <a href="https://neovim.io" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Neovim-logo.svg" alt="Neovim Logo" width="100" height="100"/>
         <br />
         <strong>Neovim</strong>
       </td>
       <td align="center">
+        <a href="https://rubyonrails.org" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails Logo" width="100" height="100"/>
         <br />
         <strong>Ruby on Rails</strong>
       </td>
       <td align="center">
+        <a href="https://www.rust-lang.org" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust Logo" width="100" height="100"/>
         <br />
         <strong>Rust</strong>
