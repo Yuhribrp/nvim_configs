@@ -14,8 +14,6 @@ return {
 				ensure_installed = {
 					"lua_ls",
           "ruby_lsp",
-					-- "omnisharp",
-          -- "csharp_ls",
 					"solargraph",
 					"html",
 				},
@@ -30,18 +28,21 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-      lspconfig.ruby_lsp.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
+      -- lspconfig.ruby_lsp.setup({
+      --   capabilities = capabilities,
+      -- })
 			-- lspconfig.omnisharp.setup({
 			-- 	capabilities = capabilities,
 			-- })
 			-- lspconfig.csharp_ls.setup({
 			-- 	capabilities = capabilities,
 			-- })
-			lspconfig.solargraph.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.solargraph.setup({
+			-- 	capabilities = capabilities,
+			-- })
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
