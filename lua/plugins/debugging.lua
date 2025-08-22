@@ -3,6 +3,7 @@ return {
   dependencies = {
     "nvim-neotest/nvim-nio",
     "suketa/nvim-dap-ruby",
+    "leoluz/nvim-dap-go",
     "rcarriga/nvim-dap-ui",
     "folke/trouble.nvim",
   },
@@ -12,6 +13,7 @@ return {
 
     require("dapui").setup()
     require("dap-ruby").setup()
+    require("dap-go").setup()
 
     dap.listeners.before.attach.dapui_config = function()
       dapui.open()
@@ -50,4 +52,17 @@ return {
     -- rustaceanvim
     vim.keymap.set("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
   end,
+
+
+  -- golang
+  vim.keymap.set("n", "<Leader>dgr", function()
+    local dap = require("dap")
+    local program = vim.fn.input("Path to main.go: ", vim.fn.getcwd() .. "/", "file")
+    dap.run({
+      type = "go",
+      name = "Debug chosen main.go",
+      request = "launch",
+      program = program,
+    })
+  end, { desc = "Debug chosen Go main.go" })
 }
