@@ -33,7 +33,7 @@ return {
 
     -- Gopher commands
     vim.api.nvim_set_keymap("n", "<Leader>gm", "<cmd>lua require('gopher').gomodifytags()<CR>", opts)
-    vim.api.nvim_set_keymap("n", "<Leader>gf", "<cmd>lua require('gopher').fmt()<CR>", opts)
+    -- vim.api.nvim_set_keymap("n", "<Leader>gf", "<cmd>lua require('gopher').fmt()<CR>", opts)
     vim.api.nvim_set_keymap("n", "<Leader>gti", "<cmd>lua require('gopher').impl()<CR>", opts)
     vim.api.nvim_set_keymap("n", "<Leader>gtierr", "<cmd>lua require('gopher').iferr()<CR>", opts)
     vim.api.nvim_set_keymap("n", "<Leader>gtt", "<cmd>lua require('gopher').gotests()<CR>", opts)
