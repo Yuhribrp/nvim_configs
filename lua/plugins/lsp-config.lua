@@ -25,35 +25,48 @@ return {
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require("lspconfig")
+
+
+      local on_attach = function(_, bufnr)
+        local opts = { buffer = bufnr }
+        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+        vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+        vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+        -- vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, opts)
+      end
+
+      -- Lua
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
+        on_attach = on_attach,
       })
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities,
-      })
+
+      -- Ruby
       lspconfig.ruby_lsp.setup({
         capabilities = capabilities,
+        on_attach = on_attach,
       })
+
+      -- HTML
       lspconfig.html.setup({
         capabilities = capabilities,
+        on_attach = on_attach,
       })
 
-      -- lspconfig.gopls.setup({
-      --   capabilities = capabilities,
-      --   settings = {
-      --     gopls = {
-      --       analyses = {
-      --         unusedparams = true,
-      --         shadow = true,
-      --       },
-      --       staticcheck = true,
-      --     },
-      --   },
-      -- })
-
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "Q", vim.lsp.buf.definition, { desc = "Go to definition" })
-      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      -- Go
+      lspconfig.gopls.setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+              shadow = true,
+            },
+            staticcheck = true,
+          },
+        },
+      })
     end,
   },
 }
