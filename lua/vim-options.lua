@@ -19,14 +19,14 @@ if vim.fn.has("wsl") == 1 then
 end
 
 
-vim.api.nvim_create_augroup("nobg", { clear = true })
-vim.api.nvim_create_autocmd({ "ColorScheme" }, {
-  desc = "Tornar todos os fundos transparentes",
-  group = "nobg",
-  pattern = "*",
-  callback = function()
-    vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
-    vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
-    vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
-  end,
-})
+-- vim.api.nvim_create_augroup("nobg", { clear = true })
+-- vim.api.nvim_create_autocmd({ "ColorScheme" }, {
+--   desc = "Tornar todos os fundos transparentes",
+--   group = "nobg",
+--   pattern = "*",
+--   callback = function()
+--     vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
+--     vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
+--     vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
+--   end,
+-- })

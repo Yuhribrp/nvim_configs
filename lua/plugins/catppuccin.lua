@@ -71,25 +71,50 @@
 -- 	},
 -- }
 
+-- return {
+-- 	{
+-- 		"folke/tokyonight.nvim",
+-- 		lazy = false,
+-- 		priority = 1000,
+-- 		config = function()
+-- 			local tokyo = require("tokyonight")
+
+-- 			tokyo.setup({
+--         transparent = true,
+--         terminal_colors = true,
+--         styles = {
+--           comments = { italic = true },
+--           keywords = { italic = true },
+--         },
+
+--         lualine_bold = false,
+-- 			})
+-- 			vim.cmd([[colorscheme tokyonight]])
+-- 		end,
+-- 	},
+-- }
+
+
 return {
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			local tokyo = require("tokyonight")
+  {
+    "rose-pine/neovim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      local rosep = require("rose-pine")
 
-			tokyo.setup({
-        transparent = true,
-        terminal_colors = true,
-        styles = {
-          comments = { italic = true },
-          keywords = { italic = true },
+      rosep.setup({
+        variant = "dawn",
+        dim_nc_background = false,
+        disable_background = false,
+        highlight_groups = {
+          TelescopeBorder = { fg = "highlight_med" },
+          TelescopePromptBorder = { fg = "highlight_med" },
+          TelescopeResultsBorder = { fg = "highlight_med" },
+          TelescopePreviewBorder = { fg = "highlight_med" },
         },
-
-        lualine_bold = false,
-			})
-			vim.cmd([[colorscheme tokyonight]])
-		end,
-	},
+      })
+      vim.cmd([[colorscheme rose-pine]])
+    end,
+  }
 }
