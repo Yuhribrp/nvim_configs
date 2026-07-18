@@ -24,39 +24,24 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      local lspconfig = require("lspconfig")
 
-
-      local on_attach = function(_, bufnr)
-        local opts = { buffer = bufnr }
-        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-        vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-        vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
-        -- vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, opts)
-      end
-
-      -- Lua
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
+      vim.api.nvim_create_autocmd("LspAttach", {
+        group = vim.api.nvim_create_augroup("lsp-keymaps", { clear = true }),
+        callback = function(args)
+          local opts = { buffer = args.buf }
+          vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+          vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+          vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+          -- vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, opts)
+        end,
       })
 
-      -- Ruby
-      lspconfig.ruby_lsp.setup({
+      vim.lsp.config("*", {
         capabilities = capabilities,
-        on_attach = on_attach,
-      })
-
-      -- HTML
-      lspconfig.html.setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
       })
 
       -- Go
-      lspconfig.gopls.setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
+      vim.lsp.config("gopls", {
         settings = {
           gopls = {
             analyses = {
@@ -67,6 +52,8 @@ return {
           },
         },
       })
+
+      vim.lsp.enable({ "lua_ls", "ruby_lsp", "html", "gopls" })
     end,
   },
 }
